@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ELITE</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+    
+  </head>
+  <body>
+    <div class="wrapper__bg">
+    <div class="container">
+      <section class="hero" id="home">
+        <div class="hero__wrapper">
+          <!-- Левый столбец: шапка + контент (ограниченной ширины) -->
+          <div class="hero__left">
+            <header class="header">
+              <div class="header__container">
+                <a href="#" class="logo">
+                    <img src="logo.svg" alt="Логотип" />
+                </a>
+                <nav class="nav header__nav">
+                  <button
+                    class="nav__toggle"
+                    aria-label="Открыть меню"
+                    aria-expanded="false">
+                    <span class="nav__toggle-icon"></span>
+                  </button>
+                  <ul class="nav__list">
+                    <li class="nav__item">
+                      <a href="#home" class="nav__link">HOME</a>
+                    </li>
+                    <li class="nav__item">
+                      <a href="#about" class="nav__link">ABOUT US</a>
+                    </li>
+                    <li class="nav__item">
+                      <a href="#properties" class="nav__link">PROPERTIES</a>
+                    </li>
+                    <li class="nav__item">
+                      <a href="#contact" class="nav__link">CONTACT US</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </header>
+
+            <div class="hero__content">
+              <h1 class="hero__title">
+                Modern Offices<br />
+                in the Business Center
+              </h1>
+              <p class="hero__description">
+                Premium office spaces designed for your company's success
+              </p>
+              <ul class="hero__features">
+                <li class="hero__feature-item">
+                  <img
+                    class="hero__feature-icon"
+                    width="39"
+                    height="37"
+                    src="tick.svg"
+                    alt="Отметка"
+                  />
+                  from <span class="imp_text">$500</span> per sq. ft.
+                </li>
+                <li class="hero__feature-item">
+                  <img
+                    class="hero__feature-icon"
+                    width="39"
+                    height="37"
+                    src="tick.svg"
+                    alt="Отметка"
+                  />
+                  <span class="imp_text">30%</span> pre-order discount
+                </li>
+                <li class="hero__feature-item">
+                  <img
+                    class="hero__feature-icon"
+                    width="39"
+                    height="37"
+                    src="tick.svg"
+                    alt="Отметка"
+                  />
+                  Projected <span class="imp_text">17%</span> annual ROI
+                </li>
+              </ul>
+              <a href="#" class="button">LEARN MORE</a>
+            </div>
+          </div>
+
+          <!-- Правый столбец: изображение -->
+          <div class="hero__image-wrapper">
+            <img
+              src="img-1.jpg"
+              alt="Modern office building exterior"
+              class="hero__image"
+            />
+          </div>
+        </div>
+      </section>
+    </div>
+</div>
+  <main>
+    <section class="features" id="about">
+      <div class="container features__container">
+        <div class="features__image-wrapper features__image1-wrapper">
+          <img src="img-2.jpg" alt="Business center amenities" class="features__image" />
+        </div>
+        <div class="features__content">
+          <ul class="features__list">
+            <li class="features__item">
+              <div class="features__icon-wrapper">
+                <img src="icon.svg" alt="" class="features__icon" />
+              </div>
+              <p class="features__description">
+                Prime city center location with convenient transport accessibility
+              </p>
+            </li>
+            <li class="features__item">
+              <div class="features__icon-wrapper">
+                <img src="icon.svg" alt="" class="features__icon" />
+              </div>
+              <p class="features__description">
+                High-speed internet, parking, and state-of-the-art security systems.
+              </p>
+            </li>
+            <li class="features__item">
+              <div class="features__icon-wrapper">
+                <img src="icon.svg" alt="" class="features__icon" />
+              </div>
+              <p class="features__description">Guaranteed value growth and stable long-term income.</p>
+            </li>
+            <li class="features__item">
+              <div class="features__icon-wrapper">
+                <img src="icon.svg" alt="" class="features__icon" />
+              </div>
+              <p class="features__description">
+                Elegant architecture and premium finishes, creating a top-class workspace.
+              </p>
+            </li>
+          </ul>
+          <a href="#" class="button button--light features__button">LEARN MORE</a>
+        </div>
+        <div class="features__image-wrapper features__image2-wrapper">
+          <img src="img-3.jpg" alt="Business center amenities" class="features__image" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Секция Contact – центрируем контент и объединяем фон для формы и изображения -->
+    <section class="contact" id="contact">
+      <div class="container contact__container">
+        <div class="contact__block">
+          <div class="contact__form-wrapper">
+            <h2 class="contact__title">Contact Us</h2>
+            <form class="contact__form" action="#" method="POST">
+              <div class="contact__form-group">
+                <label for="name" class="contact__label visually-hidden">Name</label>
+                <input type="text" id="name" name="name" class="contact__input" placeholder="Name" required />
+              </div>
+              <div class="contact__form-group">
+                <label for="email" class="contact__label visually-hidden">E-mail</label>
+                <input type="email" id="email" name="email" class="contact__input" placeholder="E-mail" required />
+              </div>
+              <div class="contact__form-group contact__form-group--checkbox">
+                <input type="checkbox" id="privacy" name="privacy" class="contact__checkbox visually-hidden" required />
+                <label for="privacy" class="contact__checkbox-label">
+                  I accept <a href="#" class="contact__privacy-link">Privacy policy</a>
+                </label>
+              </div>
+              <button type="submit" class="button button--dark contact__submit">SUBMIT FORM</button>
+            </form>
+          </div>
+          <div class="contact__image-wrapper">
+            <img src="img-4.jpg" alt="Residential area with playground" class="contact__image" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__container">
+       <hr class="footer__divider" />
+      <div class="footer__top">
+       
+        <nav class="nav footer__nav">
+          <ul class="nav__list nav__list--footer">
+            <li class="nav__item"><a href="#home" class="nav__link">HOME</a></li>
+            <li class="nav__item"><a href="#about" class="nav__link">ABOUT US</a></li>
+            <li class="nav__item"><a href="#properties" class="nav__link">PROPERTIES</a></li>
+            <li class="nav__item"><a href="#contact" class="nav__link">CONTACT US</a></li>
+          </ul>
+        </nav>
+      </div>
+      <hr class="footer__divider" />
+      <div class="footer__bottom">
+        <a href="#" class="logo footer__logo">
+          <img src="logo.svg" alt="Логотип" />
+      </a>
+        <ul class="footer__socials">
+          <li class="footer__social-item">
+            <a href="#" aria-label="Instagram">
+              <img src="icon-instagram.svg" alt="Instagram" />
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a href="#" aria-label="TikTok">
+              <img src="icon-tiktok.svg" alt="TikTok" />
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a href="#" aria-label="LinkedIn">
+              <img src="icon-linkedin.svg" alt="LinkedIn" />
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a href="#" aria-label="Facebook">
+              <img src="icon-facebook.svg" alt="Facebook" />
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a href="#" aria-label="Telegram">
+              <img src="icon-telegram.svg" alt="Telegram" />
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a href="#" aria-label="YouTube">
+              <img src="icon-youtube.svg" alt="YouTube" />
+            </a>
+          </li>
+        </ul>
+        
+        <a href="#" class="button button--outline footer__callback">REQUEST A CALLBACK</a>
+      </div>
+      <div class="footer__links">
+        <p class="footer__copyright">© 2024. Copyright.</p>
+        <a href="#" class="footer__link">Privacy policy</a>
+        <a href="#" class="footer__link footer__terms">Terms of Use</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const navToggle = document.querySelector(".nav__toggle");
+      const nav = document.querySelector(".nav");
+      const body = document.body;
+
+      if (navToggle && nav) {
+        navToggle.addEventListener("click", () => {
+          const isOpened = nav.classList.toggle("nav--open");
+          navToggle.setAttribute("aria-expanded", isOpened);
+          if (isOpened) {
+            body.classList.add("no-scroll");
+          } else {
+            body.classList.remove("no-scroll");
+          }
+        });
+      }
+
+      // Закрытие меню при клике на ссылку
+      const navLinks = document.querySelectorAll(".nav__link");
+      navLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          if (nav.classList.contains("nav--open")) {
+            nav.classList.remove("nav--open");
+            navToggle.setAttribute("aria-expanded", "false");
+            body.classList.remove("no-scroll");
+          }
+        });
+      });
+
+      // Закрытие меню при клике вне меню на мобильных устройствах
+      document.addEventListener("click", (event) => {
+        const isClickInsideNav = nav.contains(event.target);
+        const isClickOnToggle = navToggle.contains(event.target);
+
+        if (!isClickInsideNav && !isClickOnToggle && nav.classList.contains("nav--open")) {
+          nav.classList.remove("nav--open");
+          navToggle.setAttribute("aria-expanded", "false");
+          body.classList.remove("no-scroll");
+        }
+      });
+    });
+  </script>
+</body>
+</html>
